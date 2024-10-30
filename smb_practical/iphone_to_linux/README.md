@@ -16,7 +16,7 @@ I spent some time searching for solutions on google but all of them required usi
 	```
    	sudo vim / etc/ samba / smb.config
 	```
-4. Add the following to the end of the config file and save (make sure to replace <user> with your current user’s:
+4. Add the following to the end of the config file and save (make sure to replace <user> with your current user’s)
 	```
  	[sambashare]
 	comment = First Share
@@ -46,17 +46,17 @@ Now you should have SMB up and running with your smb share ready to share files.
 I don't know about you but my iOS is a bit dated 😅 but not that old. I'm using an iphone 8 which is running iOS 16.7.10, oh come on there couldn't be that much that has changed right?😐
 But I'm sure regardless of your iOS version ( as long as it's >= to mine ) would work for this tutorial, hopefully.
 
-1.   Open Settings on your iphone ( this thing ⬇️ )
+1.   Open <b>Files</b>> on your iphone ( this thing ⬇️ )
      
 
         ![icon-files-download-28](https://github.com/user-attachments/assets/a5149f94-67c5-47d5-9f8a-7126e6ca4daa)
    
-2.   Now I'll be using screenshots to illustrate what to do from here on out ( and a little bit of explanation ). <b>Files</b> allows us to connect to a server on the same network. Opening <b>Files</b> for the first time should look something like the       pic below.
+2.   Now I'll be using screenshots to illustrate what to do from here on out ( and a little bit of explanation ). <b>Files</b> is the default file manager for iOS but it has a feature that allows us to connect to a server on the same network. Opening <b>Files</b> for the first time should look something like the pic below.
 
    
         ![pic11](https://github.com/user-attachments/assets/cdad96cb-9517-436b-b58e-7cc11a940112)
 
-3.   Now tap on the three dots at the upper left corner of the screen and select <b>Connect to Server</b>
+3.   Now tap on the three dots at the upper right corner of the screen and select <b>Connect to Server</b>
 
 	
 
@@ -66,12 +66,12 @@ But I'm sure regardless of your iOS version ( as long as it's >= to mine ) would
         ```
         smb://<SMB server IP>/<smb_share>
         ```
-5.   The above illustration is the format we'd have to follow if we were to connect to our SMB server via our Iphone. In this case my server would obviously have a different IP so make sure you know your server's IP, the smb user and the share.
+5.   The above illustration is the format we'd have to follow if we were to connect to our SMB server via our Iphone. In this case my server would obviously have a different IP so make sure you know your server's IP, and the smb share.
      The image below illustrates how I would connect to my SMB server from my Iphone :
      
      ![gog1](https://github.com/user-attachments/assets/7cac114a-724f-49a5-a8b8-110a8386395d)
 
-6.   Once you're done with that, tap <b>Connect</b>. The next screen gives us the connection to "connect as" since I didn't set up a guest user for samba, we'll be connecting as a <b>Registered User</b>. Note that the registered user is your current         user you used to set-up the smb server on your linux machine. Below is how I would connect to server :
+6.   Once you're done with that, tap <b>Connect</b>. The next screen prompts us for whom we would like  to "connect as" and  since I didn't set up a guest user for samba, we'll be connecting as a <b>Registered User</b>. Note that the registered user is your current         user you used to set-up the smb server on your linux machine. Below is how I would connect to my server :
 
      
      ![gog2](https://github.com/user-attachments/assets/a76f6fa9-d137-49a9-b212-11c7929a8312)
@@ -102,7 +102,9 @@ Now let's see if the uploaded files would show up on our linux machine.
 
 ![jjj](https://github.com/user-attachments/assets/78a468a4-398e-471b-8662-4badb721ba6b)
 
-Yes, yes it worked, on the left you can see the samba share and on the right you can see the files in that folder.
+
+
+Yes, yes it worked, on the left you can see the uploaded folder in our  samba share and on the right you can see the files in that folder.
 
 
  And that is how you can transfer files between your Iphone and your linux machine...
