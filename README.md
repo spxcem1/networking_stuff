@@ -104,5 +104,6 @@ Now let's see if the uploaded files would show up on our linux machine.
 
 Yes, yes it worked, on the left you can see the samba share and on the right you can see the files in that folder.
 
-## And that is how you can transfer files between your Iphone and your linux machine...
-## Later ✌️
+
+ And that is how you can transfer files between your Iphone and your linux machine...
+ Later ✌️
