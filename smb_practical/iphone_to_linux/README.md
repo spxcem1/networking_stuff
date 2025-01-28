@@ -14,7 +14,7 @@ I spent some time searching for solutions on google but all of them required usi
   	``` 
 3. We’d then need to add the share’s directory to the smb.config file. You can use your favorite text editor to do this. 
 	```
-   	sudo vim / etc/ samba / smb.config
+   	sudo vim / etc/ samba / smb.conf
 	```
 4. Add the following to the end of the config file and save (make sure to replace <user> with your current user’s)
 	```
